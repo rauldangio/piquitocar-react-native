@@ -1,4 +1,4 @@
-import { SafeAreaView, StatusBar } from 'react-native';
+import { SafeAreaView, StatusBar, Text } from 'react-native';
 import Carrinho from './src/pages/Carrinho';
 
 export default function App() {
