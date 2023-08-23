@@ -5,7 +5,7 @@ import  topo  from "../../../assets/topo.png";
 const width = Dimensions.get('screen').width;
 
 export default function Carrinho(){
-    
+
     return <>
     <Image source={topo} style={estilos.topo}/>
     <Text style={estilos.titulo}>Detalhes do carrinho</Text>
@@ -32,7 +32,7 @@ const estilos = StyleSheet.create({
         textAlign: "center",
         fontSize: 24,
         lineHeight: 26,
-        fontWeight: "bold",
-        padding: 16
+        padding: 16,
+        fontFamily: "MontserratItalic"
     }
 })
