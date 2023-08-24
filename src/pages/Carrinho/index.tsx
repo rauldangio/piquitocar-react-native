@@ -13,12 +13,11 @@ export default function Carrinho(){
     <View style={estilos.carrinho}>
         <Text style={estilos.nome}>Carrinho de Compras</Text>
         <View style={estilos.fazenda}>
-            <Image source={logo}/>
-            <Text style={estilos.nome}>Fazenda do Lorde Raul</Text>
+            <Image style={estilos.imagemFazenda} source={logo}/>
+            <Text style={estilos.nomeFazenda}>Fazenda do Lorde Raul</Text>
         </View>
-        <Text style={estilos.nome}>Carrinho de Compras</Text>
-        <Text style={estilos.nome}>Uma cesta deliciosa com produtos frescos da melhor fazenda do sudeste!</Text>
-        <Text style={estilos.nome}>R$ 40,00</Text>
+        <Text style={estilos.descricao}>Uma cesta deliciosa com produtos frescos da melhor fazenda do sudeste!</Text>
+        <Text style={estilos.preco}>R$ 40,00</Text>
     </View>
 
     </>
@@ -26,32 +25,53 @@ export default function Carrinho(){
 
 const estilos = StyleSheet.create({
     topo: {
-        width:"100%",
-        height: 578 / 768 * width,
+      width:"100%",
+      height: 578 / 768 * width,
     },
     titulo:{
-        width: "100%",
-        position: "absolute",
-        color: "white",
-        textAlign: "center",
-        fontSize: 24,
-        lineHeight: 26,
-        padding: 16,
-        fontFamily: "MontserratItalic"
+      width: "100%",
+      position: "absolute",
+      color: "white",
+      textAlign: "center",
+      fontSize: 24,
+      lineHeight: 26,
+      padding: 16,
+      fontFamily: "MontserratItalic"
     },
     carrinho: {
-        paddingVertical: 8,
-        paddingHorizontal: 16,
+      paddingVertical: 8,
+      paddingHorizontal: 16,
     },
 
     nome: {
-        fontSize: 26,
-        lineHeight: 42,
-        color: "#464646"
+      fontSize: 26,
+      lineHeight: 42,
+      color: "#464646"
     },
 
     fazenda: {
-        flexDirection: "row",
-        paddingVertical: 12
+      flexDirection: "row",
+      paddingVertical: 12
+    },
+    imagemFazenda:{
+      width: 32,
+      height: 32
+    },
+    nomeFazenda: {
+      fontSize: 16,
+      fontFamily: "MontserratBold",
+      lineHeight: 26,
+      marginLeft: 12
+    },
+    descricao: {
+      color: "#A3A3A3",
+      fontFamily: "MontserratItalic"
+    },
+    preco: {
+      fontSize: 26,
+      fontFamily: "MontserratRegular",
+      color: "#2A9f85",
+      marginTop: 8,
+
     }
 })
