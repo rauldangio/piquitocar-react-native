@@ -8,9 +8,9 @@ import Carrinho from './src/pages/Carrinho';
 
 export default function App() {
   const[fonteCarregada] = useFonts({
-        "MontserratRegular": Montserrat_400Regular,
-        "MontserratBold": Montserrat_700Bold,
-        "MontserratItalic": Montserrat_400Regular_Italic
+        "MontSerratRegular": Montserrat_400Regular,
+        "MontSerratBold": Montserrat_700Bold,
+        "MontSerratItalic": Montserrat_400Regular_Italic
   })
 
   if (!fonteCarregada) {
